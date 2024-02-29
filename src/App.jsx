@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 // import About from './components/About';
 import Accordian from './components/Accordian';
 import Project from './components/Project';
-import Hero from './components/hero';
+import Hero from './components/Hero';
 // import Publication from './components/publication';
 import css from './styles/app.module.scss';
 import { FaBars } from 'react-icons/fa';
