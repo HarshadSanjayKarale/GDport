@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "preview": "vite preview",
-    "build": "npm install && npm run dev"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "framer-motion": "^8.0.2",
