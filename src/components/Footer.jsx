@@ -1,0 +1,28 @@
+import React from 'react'
+import './footer.css'
+import {FaFacebookSquare} from 'react-icons/fa';
+import {FiInstagram} from 'react-icons/fi';
+import { FiYoutube } from "react-icons/fi";
+import { CiLinkedin } from "react-icons/ci";
+
+
+
+const Footer = () => {
+  return (
+    <footer>
+      <a href="#home" className='footer__logo'>Ganesh Deshmukh</a>
+    <div className="footer__socials">
+        <a href="https://www.facebook.com/ganesh.deshmukh.505523"><FaFacebookSquare/></a>
+        <a href="https://www.instagram.com/ganeshdeshmukh1205/"><FiInstagram/></a>
+        <a href="https://www.youtube.com/@ganeshdeshmukh7469"><FiYoutube /></a>
+        <a href="https://www.linkedin.com/in/ganesh-deshmukh-45a96372/"><CiLinkedin /></a>
+      </div>
+
+      <div className="footer__copyright">
+        <small>&copy;All rights reserved.</small>
+      </div>
+     </footer>
+  )
+}
+
+export default Footer
