@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 // import About from './components/About';
 import Accordian from './components/Accordian';
 import Project from './components/Project';
-import Hero from './components/hero';
+import Hero from './components/Hero';
 // import Publication from './components/publication';
 import css from './styles/app.module.scss';
 import { FaBars } from 'react-icons/fa';
@@ -30,7 +30,7 @@ const Navbar = () => {
       <li><Link to="/">Home</Link></li>
         <li><Link to="/about">Publication</Link></li>
         <li><a href='https://drive.google.com/drive/folders/1Tw2jrl7RBJQeBfp9DfU8kj7BxrT1ITSr?usp=drive_link'>StudyMaterial</a></li>
-         <li><Link to="/youtube">Youtube</Link></li>
+         <li><a href='https://www.youtube.com/channel/UC5d03LHy5Ny82hrnhw3ZMTQ'>Youtube</a></li>
        <li><Link to="/gallery">Gallary</Link></li>
       </ul>
     </nav>
