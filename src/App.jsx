@@ -9,6 +9,7 @@ import css from './styles/app.module.scss';
 import { FaBars } from 'react-icons/fa';
 import Footer from './components/Footer';
 // import VisitorCounter from './components/VisitorCounter';
+// import VisitorCounter from './components/VisitorCounter';
 
 
 const Navbar = () => {
@@ -51,6 +52,7 @@ const App = () => {
         <Accordian/>
         <Footer/>
         {/* <VisitorCounter/> */}
+        
         {/* <Publication /> */}
       </div>
     </Router>
