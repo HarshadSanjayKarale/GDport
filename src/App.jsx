@@ -1,16 +1,11 @@
-import React, { useState, useEffect } from 'react'; // Add useEffect import
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Make sure to import Routes
-// import About from './components/About';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Accordian from './components/Accordian';
 import Project from './components/Project';
 import Hero from './components/Hero';
-// import Publication from './components/publication';
+import Footer from './components/Footer';
 import css from './styles/app.module.scss';
 import { FaBars } from 'react-icons/fa';
-import Footer from './components/Footer';
-// import VisitorCounter from './components/VisitorCounter';
-// import VisitorCounter from './components/VisitorCounter';
-
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,35 +23,29 @@ const Navbar = () => {
         Ganesh Deshmukh
       </div>
       <ul className={`${css['navbar-list']} ${isOpen ? css.show : ''}`}>
-      <li><Link to="/">Home</Link></li>
+        <li><Link to="/">Home</Link></li>
         <li><Link to="/about">Publication</Link></li>
         <li><a href='https://drive.google.com/drive/folders/1Tw2jrl7RBJQeBfp9DfU8kj7BxrT1ITSr?usp=drive_link'>StudyMaterial</a></li>
-         <li><a href='https://www.youtube.com/channel/UC5d03LHy5Ny82hrnhw3ZMTQ'>Youtube</a></li>
-       <li><Link to="/gallery">Gallary</Link></li>
+        <li><a href='https://www.youtube.com/channel/UC5d03LHy5Ny82hrnhw3ZMTQ'>Youtube</a></li>
+        <li><Link to="/gallery">Gallery</Link></li>
       </ul>
     </nav>
   );
 };
-
 
 const App = () => {
   return (
     <Router>
       <div className={`bg-primary ${css.container}`}>
         <Navbar />
-        <Routes> {/* Wrap your Routes within a Routes component */}
+        <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/about" element={  <Project />} />
-          {/* Add more routes for other components */}
+          <Route path="/about" element={<Project />} />
         </Routes>
-        <Accordian/>
-        <Footer/>
-        {/* <VisitorCounter/> */}
-        
-        {/* <Publication /> */}
+        <Accordian />
+        <Footer />
       </div>
     </Router>
-
   );
 };
 
