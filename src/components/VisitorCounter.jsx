@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, runTransaction, get } from 'firebase/database';
 
-// Your web app's Firebase configuration
+// app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBel8REOvKGPOp4-vVLDnbBovvj9wsHmdY",
   authDomain: "ganeshdeshmukh-6492e.firebaseapp.com",
