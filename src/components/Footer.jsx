@@ -4,7 +4,7 @@ import {FaFacebookSquare} from 'react-icons/fa';
 import {FiInstagram} from 'react-icons/fi';
 import { FiYoutube } from "react-icons/fi";
 import { CiLinkedin } from "react-icons/ci";
-// import VisitorCounter from './VisitorCounter';
+import VisitorCounter from './VisitorCounter';
 
 
 
@@ -23,9 +23,9 @@ const Footer = () => {
         <small>&copy;All rights reserved.</small>
       </div>
 
-      {/* <div className="visitorcount">
+      <div className="visitorcount">
         <VisitorCounter/>
-      </div> */}
+      </div>
      </footer>
   )
 }
