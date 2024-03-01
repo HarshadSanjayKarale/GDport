@@ -67,14 +67,13 @@ const Hero = () => {
           <article className="about__card">
           <FcPodiumWithSpeaker className="about__icon"/>
             <h5>Talks</h5>
-            <small>10+ Invited Talks</small>
+            <small>12+ Invited Talks</small>
           </article>
           </div>
 
                     </div>
                 </div>
             </motion.div>
-            <script defer data-domain="g-dport.vercel.app" src="https://plausible.io/js/script.js"></script>
     </section>
   )
 }

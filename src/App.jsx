@@ -38,26 +38,6 @@ const Navbar = () => {
 };
 
 
-const VisitCounter = () => {
-  const [visits, setVisits] = useState(0);
-
-  // Loading from localStorage
-  useEffect(() => {
-    const storedVisits = Number(localStorage.getItem("visitCounter")) || 0;
-    setVisits(storedVisits + 1);
-  }, []);
-
-  // Saving in localStorage
-  useEffect(() => {
-    localStorage.setItem("visitCounter", visits);
-  }, [visits]);
-
-  return<div><p>Visitor Count :</p>  <p>{visits}</p></div>;
-};
-
-
-
-
 const App = () => {
   return (
     <Router>
@@ -70,7 +50,6 @@ const App = () => {
         </Routes>
         <Accordian/>
         <Footer/>
-        <VisitCounter/>
         {/* <VisitorCounter/> */}
         {/* <Publication /> */}
       </div>
