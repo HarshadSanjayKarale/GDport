@@ -48,7 +48,7 @@ const VisitorCounter = () => {
     style={{ backgroundColor: '#ffb157', textAlign: 'center' }}
     >
       <div className="visitor-counter"> 
-        <h2>Visitor Count: {(visitorCount - 1)/2} +</h2>
+        <h2>Visitor Count: {(visitorCount - 1)} +</h2>
       </div>
     </div>
   );
