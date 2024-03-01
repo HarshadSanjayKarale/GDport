@@ -74,6 +74,7 @@ const Hero = () => {
                     </div>
                 </div>
             </motion.div>
+            <script defer data-domain="g-dport.vercel.app" src="https://plausible.io/js/script.js"></script>
     </section>
   )
 }

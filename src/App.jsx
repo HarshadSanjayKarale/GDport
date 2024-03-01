@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; // Add useEffect import
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Make sure to import Routes
 // import About from './components/About';
 import Accordian from './components/Accordian';
@@ -8,6 +8,8 @@ import Hero from './components/hero';
 import css from './styles/app.module.scss';
 import { FaBars } from 'react-icons/fa';
 import Footer from './components/Footer';
+// import VisitorCounter from './components/VisitorCounter';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,6 +38,26 @@ const Navbar = () => {
 };
 
 
+const VisitCounter = () => {
+  const [visits, setVisits] = useState(0);
+
+  // Loading from localStorage
+  useEffect(() => {
+    const storedVisits = Number(localStorage.getItem("visitCounter")) || 0;
+    setVisits(storedVisits + 1);
+  }, []);
+
+  // Saving in localStorage
+  useEffect(() => {
+    localStorage.setItem("visitCounter", visits);
+  }, [visits]);
+
+  return<div><p>Visitor Count :</p>  <p>{visits}</p></div>;
+};
+
+
+
+
 const App = () => {
   return (
     <Router>
@@ -48,9 +70,12 @@ const App = () => {
         </Routes>
         <Accordian/>
         <Footer/>
+        <VisitCounter/>
+        {/* <VisitorCounter/> */}
         {/* <Publication /> */}
       </div>
     </Router>
+
   );
 };
 
