@@ -44,9 +44,7 @@ const VisitorCounter = () => {
   }, []);
 
   return (
-    <div className="visitor-counter-container"
-    style={{ backgroundColor: '#ffb157', textAlign: 'center' }}
-    >
+    <div className="visitor-counter-container">
       <div className="visitor-counter"> 
         <h2>Visitor Count: {(visitorCount - 1)} +</h2>
       </div>

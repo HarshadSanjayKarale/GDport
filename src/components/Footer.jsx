@@ -11,7 +11,7 @@ import VisitorCounter from './VisitorCounter';
 const Footer = () => {
   return (
     <footer>
-      <a href="#home" className='footer__logo'>Ganesh Deshmukh</a>
+      <img src='src\assets\title.png'></img>
     <div className="footer__socials">
         <a href="https://www.facebook.com/ganesh.deshmukh.505523"><FaFacebookSquare/></a>
         <a href="https://www.instagram.com/ganeshdeshmukh1205/"><FiInstagram/></a>

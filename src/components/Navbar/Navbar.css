@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+nav{
+    height: 70px;
+    background-image: linear-gradient(to left,rgb(237, 116, 69) ,rgb(62, 94, 239),rgb(36, 72, 234) );
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav img{
+    width: 290px;
+    height: 50px;
+    position: absolute;
+    top: 7px;
+    left: 3%;
+}
+
+nav .title{
+        position: absolute;
+        font-weight: 600;
+        line-height: 54px;
+        width: fit-content;
+        font-size: 40px;
+        font-family: "Dancing Script", cursive;
+        padding: 8px;
+        color: rgb(180, 92, 57);
+        background-image: linear-gradient(to right,rgb(221, 152, 125) ,rgb(62, 94, 239) );
+}
+
+nav ul{
+    margin-left: 40%;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+nav ul li a{
+    
+    margin: 0 15px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(255, 150, 3);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left; 
+    background: rgb(255, 111, 0);
+    color: rgb(255, 111, 0);
+}
+
+
+nav ul li a svg {
+    margin-right: 5px; 
+    font-size: 24px; 
+    margin-top: 10px;
+}
+
+label #btn,
+label #cancel{
+    font-size: 40px;
+    top: 2%;
+    color: rgb(255, 255, 255);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width:1118px) {
+    nav img{
+        left: 2%;
+    }
+    nav ul{
+        margin-left: 40%
+    }
+
+    nav ul li a svg {
+        margin-right: 1px; 
+        font-size: 14px; 
+        margin-top: 5px;
+    }
+
+    
+}
+
+
+@media (max-width:944px) {
+    
+    nav{
+        background-image: linear-gradient(to left,rgb(237, 116, 69) ,rgb(62, 94, 239),rgb(62, 94, 239),rgb(18, 59, 239) );
+    }
+    nav img{
+        left: 1%;
+        top: 10px;
+        width: 290px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    nav ul{
+        margin-left: 40%
+    }
+
+
+}
+
+
+@media (max-width:860px) {
+    
+    nav ul li a svg {
+        margin-right: 5px; 
+        font-size: 24px; 
+        margin-top: 10px;
+    }
+    label #btn{
+        display: block;
+    }
+
+    nav ul{
+        margin-left: 0%
+    }
+
+    ul{
+        position: absolute;
+        width: 100%;
+        height: 35vh;
+        background-image: linear-gradient(to left,rgb(62, 94, 239),rgb(62, 94, 239),rgb(62, 94, 239),rgb(18, 59, 239) );
+        top:70px;
+        left: -2000px;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 15px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 25px;
+    }
+
+    #check:checked ~ul{
+        left: 0px;
+    }
+
+    #check:checked ~label #btn{
+        display: none;
+    }
+
+    #check:checked ~label #cancel{
+        display: block;
+    }
+
+}

@@ -20,15 +20,16 @@
 
 .about__icon{
     color: var(--color-primary);
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom:1rem;
 }
 
 .about__card h5{
-font-size: 0.95rem;
+font-size: 1.2rem;
 }
 
 .about__card small{
-    font-size: 0.7rem;
+    margin-top: 2%;
+    font-size: 1rem;
     color: var(--color-light);
     }
