@@ -1,20 +1,15 @@
 footer{
-    background-image: linear-gradient(to left,rgb(237, 116, 69), rgb(104, 128, 234),rgb(89, 116, 237),rgb(62, 94, 239),rgb(65, 98, 242) );
+    background: #ffb157;
     padding: 3rem 0;
     text-align: center;
-    font-size: 1.3rem;
-    margin-top: 10rem;
+    font-size: 0.9rem;
+    margin-top: 7rem;
 }
 
 footer a{
     color: var(--color-bg);
 }
 
-footer img{
-    height: 80px;
-    width: auto;
-    margin-bottom: 2%;
-}
 .footer__logo{
     font-size: 2rem;
     font-weight: 500;
@@ -55,11 +50,6 @@ footer img{
 
 .footer__copyright{
     margin-bottom: 4rem;
-}
-
-.visitor-count{
-    font-size: 5px;
-    background-image: linear-gradient(to left,rgb(237, 116, 69), rgb(104, 128, 234),rgb(89, 116, 237),rgb(62, 94, 239),rgb(65, 98, 242) );
 }
 
  /*______________________________ media query for tablet ____________________________________________*/
