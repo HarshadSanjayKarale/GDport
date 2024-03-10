@@ -10,6 +10,8 @@ import {
     FaChalkboard
   } from "react-icons/fa";
 
+  import title from "../../assets/title.png";
+
 
   import { IoIosContact } from "react-icons/io";
 import { Link } from 'react-router-dom';
@@ -22,7 +24,7 @@ function Navbar() {
             <FaBars id='btn' />
             <IoCloseSharp id='cancel' />
             </label>
-                <img src='src\assets\title.png'></img>
+                <img src={title}></img>
             <ul>
 
                 <li><Link to="/"><FaTachometerAlt />  Home</Link></li>

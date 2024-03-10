@@ -5,13 +5,14 @@ import {FiInstagram} from 'react-icons/fi';
 import { FiYoutube } from "react-icons/fi";
 import { CiLinkedin } from "react-icons/ci";
 import VisitorCounter from './VisitorCounter';
+import title from "../assets/title.png";
 
 
 
 const Footer = () => {
   return (
     <footer>
-      <img src="src\assets\title.png" alt="" />
+      <img src={title} alt="" />
     <div className="footer__socials">
         <a href="https://www.facebook.com/ganesh.deshmukh.505523"><FaFacebookSquare/></a>
         <a href="https://www.instagram.com/ganeshdeshmukh1205/"><FiInstagram/></a>
